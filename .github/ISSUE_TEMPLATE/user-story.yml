@@ -38,11 +38,13 @@ body:
     validations:
       required: false
 
-  - type: checkboxes
+  - type: dropdown
     id: prioridad
     attributes:
       label: Prioridad
       options:
-        - label: Baja
-        - label: Media
-        - label: Alta
+        - Baja
+        - Media
+        - Alta
+    validations:
+      required: true

@@ -1,18 +1,18 @@
-**Objetivo**:
+# Objetivo
 
-### Cambios realizados
+## Cambios realizados
 
 - [ ] Cambio 1
 - [ ] Cambio 2
 
-### Qué probar
+## Qué probar
 
 - [ ] Verificación 1
 - [ ] Verificación 2
 
-### Rollback
+## Rollback
 
-#### Sin haber hecho merge
+### Sin haber hecho merge
 
 - Cerrar el pull request con `Close pull request`
 

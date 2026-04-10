@@ -1,10 +1,7 @@
----
 name: Historia de usuario
-about: Plantilla para crear historias de usuario en español
+description: Plantilla para crear historias de usuario en español
 title: '[HU-XXX] '
-labels: 'user-story'
-assignees: ''
-
+labels: ['user-story']
 body:
   - type: textarea
     id: titulo

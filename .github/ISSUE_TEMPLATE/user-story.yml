@@ -6,7 +6,6 @@ body:
     id: como
     attributes:
       label: Como
-      description: Rol de usuario que realizará la acción.
       placeholder: "Rol o tipo de usuario"
     validations:
       required: true
@@ -15,7 +14,6 @@ body:
     id: quiero
     attributes:
       label: Quiero
-      description: Funcionalidad o acción que se desea realizar.
       placeholder: "Acción o funcionalidad deseada"
     validations:
       required: true
@@ -24,7 +22,6 @@ body:
     id: para
     attributes:
       label: Para
-      description: Beneficio o valor que se obtiene.
       placeholder: "Beneficio o valor esperado"
     validations:
       required: true

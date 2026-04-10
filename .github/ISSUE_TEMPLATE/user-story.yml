@@ -1,32 +1,44 @@
 name: Historia de usuario
 description: Plantilla para crear historias de usuario en español
-title: '[HU-XXX] '
+title: 'Título'
 labels: ['user-story']
 body:
-  - type: textarea
-    id: titulo
+  - type: input
+    id: como
     attributes:
-      label: Título
-      description: "Como [rol de usuario], quiero [funcionalidad] para [beneficio]."
-      placeholder: "Como usuario registrado, quiero recuperar mi contraseña por correo para poder acceder a mi cuenta."
+      label: Como
+      description: Rol de usuario que realizará la acción.
+      placeholder: "usuario registrado"
+    validations:
+      required: true
+
+  - type: input
+    id: quiero
+    attributes:
+      label: Quiero
+      description: Funcionalidad o acción que se desea realizar.
+      placeholder: "recuperar mi contraseña por correo"
+    validations:
+      required: true
+
+  - type: input
+    id: para
+    attributes:
+      label: Para
+      description: Beneficio o valor que se obtiene.
+      placeholder: "poder acceder a mi cuenta"
     validations:
       required: true
 
   - type: textarea
-    id: descripcion
+    id: criterios-aceptacion
     attributes:
-      label: Descripción
-      description: Descripción detallada de la historia de usuario y lo que se necesita implementar.
-      placeholder: Describe los detalles de la funcionalidad...
-    validations:
-      required: false
-
-  - type: textarea
-    id: criterios-negocio
-    attributes:
-      label: Criterios de aceptación del negocio
-      description: Criterios que deben cumplirse para que la historia esté completa.
-      placeholder: "- Criterio 1&#10;- Criterio 2"
+      label: Criterios de aceptación
+      description: Lista de criterios que deben cumplirse para que la historia esté completa.
+      placeholder: |
+        - Criterio 1
+        - Criterio 2
+        - Criterio 3
     validations:
       required: false
 
@@ -38,33 +50,3 @@ body:
         - label: Baja
         - label: Media
         - label: Alta
-        - label: Crítica
-
-  - type: textarea
-    id: pruebas-aceptacion
-    attributes:
-      label: Pruebas de aceptación
-      description: "Formato Gherkin: Dado/Cuando/Entonces"
-      placeholder: |
-        ### Escenario 1: [Título del escenario]
-
-        **Dado** [condición inicial]
-        **Cuando** [acción del usuario]
-        **Entonces** [resultado esperado]
-
-        ### Escenario 2: [Título del escenario]
-
-        **Dado** [condición inicial]
-        **Cuando** [acción del usuario]
-        **Entonces** [resultado esperado]
-    validations:
-      required: false
-
-  - type: textarea
-    id: notas-adicionales
-    attributes:
-      label: Notas adicionales
-      description: Información adicional, dependencias, o consideraciones técnicas.
-      placeholder: Cualquier información adicional relevante...
-    validations:
-      required: false

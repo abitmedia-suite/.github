@@ -1,40 +1,40 @@
-name: Historia de usuario
-description: Plantilla para crear historias de usuario
+name: User Story
+description: Template for creating user stories
 projects: ['abitmedia-suite/3']
 type: Feature
 labels: ['enhancement']
 body:
   - type: input
-    id: como
+    id: as-a
     attributes:
-      label: Como
-      placeholder: "Rol o tipo de usuario"
+      label: As a
+      placeholder: "User role or type"
     validations:
       required: true
 
   - type: input
-    id: quiero
+    id: i-want
     attributes:
-      label: Quiero
-      placeholder: "Acción o funcionalidad deseada"
+      label: I want
+      placeholder: "Desired action or functionality"
     validations:
       required: true
 
   - type: input
-    id: para
+    id: so-that
     attributes:
-      label: Para
-      placeholder: "Beneficio o valor esperado"
+      label: So that
+      placeholder: "Expected benefit or value"
     validations:
       required: true
 
   - type: textarea
-    id: criterios-aceptacion
+    id: acceptance-criteria
     attributes:
-      label: Criterios de aceptación
-      description: Lista de criterios que deben cumplirse para que la historia esté completa.
+      label: Acceptance Criteria
+      description: List of criteria that must be met for the story to be complete.
       placeholder: |
-        - Condición que debe cumplirse
-        - Otra condición que debe cumplirse
+        - Condition that must be met
+        - Another condition that must be met
     validations:
       required: false

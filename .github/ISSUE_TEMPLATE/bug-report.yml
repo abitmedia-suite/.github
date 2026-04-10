@@ -1,82 +1,82 @@
-name: Reporte de bug
-description: Plantilla para reportar errores o defectos
+name: Bug Report
+description: Template for reporting bugs or defects
 projects: ['abitmedia-suite/3']
 type: Bug
 labels: ['bug']
 body:
   - type: textarea
-    id: pasos-reproducir
+    id: steps-to-reproduce
     attributes:
-      label: Pasos para reproducir
-      description: Secuencia de pasos para reproducir el error.
+      label: Steps to Reproduce
+      description: Step-by-step sequence to reproduce the bug.
       placeholder: |
-        1. Ir a '...'
-        2. Hacer clic en '...'
-        3. Desplazarse hacia '...'
+        1. Go to '...'
+        2. Click on '...'
+        3. Scroll to '...'
     validations:
       required: true
 
   - type: textarea
-    id: resultado-esperado
+    id: expected-result
     attributes:
-      label: Resultado esperado
-      description: Qué debería ocurrir al seguir los pasos.
-      placeholder: "Descripción del comportamiento esperado"
+      label: Expected Result
+      description: What should happen when following the steps.
+      placeholder: "Description of expected behavior"
     validations:
       required: true
 
   - type: textarea
-    id: resultado-actual
+    id: actual-result
     attributes:
-      label: Resultado actual
-      description: Qué ocurre realmente al seguir los pasos.
-      placeholder: "Descripción del comportamiento actual"
+      label: Actual Result
+      description: What actually happens when following the steps.
+      placeholder: "Description of actual behavior"
     validations:
       required: true
 
   - type: textarea
-    id: entorno
+    id: environment
     attributes:
-      label: Entorno
-      description: Información del entorno donde se presenta el error.
+      label: Environment
+      description: Environment details where the bug occurs.
       placeholder: |
-        - Sistema operativo:
-        - Navegador y versión:
-        - Versión de la aplicación:
-        - Dispositivo:
+        - Operating system:
+        - Browser and version:
+        - App version:
+        - Device:
     validations:
       required: false
 
   - type: textarea
-    id: evidencia
+    id: evidence
     attributes:
-      label: Evidencia
-      description: Capturas de pantalla, logs o mensajes de error relevantes.
-      placeholder: "Arrastra imágenes o pega logs aquí"
+      label: Evidence
+      description: Screenshots, logs, or relevant error messages.
+      placeholder: "Drag images or paste logs here"
     validations:
       required: false
 
   - type: dropdown
-    id: severidad
+    id: severity
     attributes:
-      label: Severidad
-      description: Impacto técnico del error.
+      label: Severity
+      description: Technical impact of the bug.
       options:
         - Trivial
-        - Menor
-        - Mayor
-        - Crítica
+        - Minor
+        - Major
+        - Critical
     validations:
       required: true
 
   - type: dropdown
-    id: reproducibilidad
+    id: reproducibility
     attributes:
-      label: Reproducibilidad
-      description: Frecuencia con la que se presenta el error.
+      label: Reproducibility
+      description: How often the bug occurs.
       options:
-        - Siempre
-        - A veces
-        - Una sola vez
+        - Always
+        - Sometimes
+        - Only once
     validations:
       required: true

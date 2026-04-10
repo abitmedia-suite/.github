@@ -1,22 +1,22 @@
-# Objetivo
+# Objective
 
-## Cambios realizados
+## Changes Made
 
-- [ ] Cambio 1
-- [ ] Cambio 2
+- [ ] Change 1
+- [ ] Change 2
 
-## Qué probar
+## What to Test
 
-- [ ] Verificación 1
-- [ ] Verificación 2
+- [ ] Verification 1
+- [ ] Verification 2
 
 ## Rollback
 
-### Sin haber hecho merge
+### Before merge
 
-- Cerrar el pull request con `Close pull request`
+- Close the pull request with `Close pull request`
 
-#### En caso de haber aceptado el merge
+### After merge
 
-- Revertir el merge: `git revert -m 1 <SHA-1 del commit de merge>`
-- Hacer push del nuevo commit a la rama correspondiente: `git push origin main` o `git push origin dev`
+- Revert the merge: `git revert -m 1 <merge commit SHA-1>`
+- Push the new commit to the corresponding branch: `git push origin main` or `git push origin dev`

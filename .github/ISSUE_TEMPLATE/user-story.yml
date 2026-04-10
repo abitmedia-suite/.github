@@ -1,5 +1,6 @@
 name: Historia de usuario
 description: Plantilla para crear historias de usuario en español
+type: Feature
 labels: []
 body:
   - type: input

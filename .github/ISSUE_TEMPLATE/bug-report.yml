@@ -1,0 +1,81 @@
+name: Reporte de bug
+description: Plantilla para reportar errores o defectos
+type: Bug
+labels: []
+body:
+  - type: textarea
+    id: pasos-reproducir
+    attributes:
+      label: Pasos para reproducir
+      description: Secuencia de pasos para reproducir el error.
+      placeholder: |
+        1. Ir a '...'
+        2. Hacer clic en '...'
+        3. Desplazarse hacia '...'
+    validations:
+      required: true
+
+  - type: textarea
+    id: resultado-esperado
+    attributes:
+      label: Resultado esperado
+      description: Qué debería ocurrir al seguir los pasos.
+      placeholder: "Descripción del comportamiento esperado"
+    validations:
+      required: true
+
+  - type: textarea
+    id: resultado-actual
+    attributes:
+      label: Resultado actual
+      description: Qué ocurre realmente al seguir los pasos.
+      placeholder: "Descripción del comportamiento actual"
+    validations:
+      required: true
+
+  - type: textarea
+    id: entorno
+    attributes:
+      label: Entorno
+      description: Información del entorno donde se presenta el error.
+      placeholder: |
+        - Sistema operativo:
+        - Navegador y versión:
+        - Versión de la aplicación:
+        - Dispositivo:
+    validations:
+      required: false
+
+  - type: textarea
+    id: evidencia
+    attributes:
+      label: Evidencia
+      description: Capturas de pantalla, logs o mensajes de error relevantes.
+      placeholder: "Arrastra imágenes o pega logs aquí"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: severidad
+    attributes:
+      label: Severidad
+      description: Impacto técnico del error.
+      options:
+        - Trivial
+        - Menor
+        - Mayor
+        - Crítica
+    validations:
+      required: true
+
+  - type: dropdown
+    id: reproducibilidad
+    attributes:
+      label: Reproducibilidad
+      description: Frecuencia con la que se presenta el error.
+      options:
+        - Siempre
+        - A veces
+        - Una sola vez
+    validations:
+      required: true

@@ -37,14 +37,3 @@ body:
         - Otra condición que debe cumplirse
     validations:
       required: false
-
-  - type: dropdown
-    id: prioridad
-    attributes:
-      label: Prioridad
-      options:
-        - Baja
-        - Media
-        - Alta
-    validations:
-      required: true

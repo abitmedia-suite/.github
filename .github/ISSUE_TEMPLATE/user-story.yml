@@ -1,7 +1,7 @@
 name: Historia de usuario
 description: Plantilla para crear historias de usuario
 type: Feature
-labels: []
+labels: ['enhancement']
 body:
   - type: input
     id: como

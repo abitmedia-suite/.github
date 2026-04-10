@@ -1,14 +1,13 @@
 name: Historia de usuario
 description: Plantilla para crear historias de usuario en español
-title: 'Título'
-labels: ['user-story']
+labels: []
 body:
   - type: input
     id: como
     attributes:
       label: Como
       description: Rol de usuario que realizará la acción.
-      placeholder: "usuario registrado"
+      placeholder: "Rol o tipo de usuario"
     validations:
       required: true
 
@@ -17,7 +16,7 @@ body:
     attributes:
       label: Quiero
       description: Funcionalidad o acción que se desea realizar.
-      placeholder: "recuperar mi contraseña por correo"
+      placeholder: "Acción o funcionalidad deseada"
     validations:
       required: true
 
@@ -26,7 +25,7 @@ body:
     attributes:
       label: Para
       description: Beneficio o valor que se obtiene.
-      placeholder: "poder acceder a mi cuenta"
+      placeholder: "Beneficio o valor esperado"
     validations:
       required: true
 
@@ -36,9 +35,8 @@ body:
       label: Criterios de aceptación
       description: Lista de criterios que deben cumplirse para que la historia esté completa.
       placeholder: |
-        - Criterio 1
-        - Criterio 2
-        - Criterio 3
+        - Condición que debe cumplirse
+        - Otra condición que debe cumplirse
     validations:
       required: false
 

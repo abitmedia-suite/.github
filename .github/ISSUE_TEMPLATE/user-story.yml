@@ -1,5 +1,6 @@
 name: Historia de usuario
 description: Plantilla para crear historias de usuario
+projects: ['abitmedia-suite/3']
 type: Feature
 labels: ['enhancement']
 body:

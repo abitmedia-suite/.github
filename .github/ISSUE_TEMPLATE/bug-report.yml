@@ -1,5 +1,6 @@
 name: Reporte de bug
 description: Plantilla para reportar errores o defectos
+projects: ['abitmedia-suite/3']
 type: Bug
 labels: ['bug']
 body:
